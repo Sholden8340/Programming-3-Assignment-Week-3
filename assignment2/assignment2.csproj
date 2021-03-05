@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{88E801E7-78C9-49C3-B613-A318878B5CEC}</ProjectGuid>
+    <ProjectGuid>{EE748F11-AB65-41C0-B345-1F7242C43FC2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>assignment1</RootNamespace>
-    <AssemblyName>assignment1</AssemblyName>
+    <RootNamespace>assignment2</RootNamespace>
+    <AssemblyName>assignment2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="BookStore.cs" />
-    <Compile Include="BookStoreItem.cs" />
-    <Compile Include="Magazine.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="Ticket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,7 +30,7 @@ namespace assignment1
                 }
 
                 Console.WriteLine(b.ToString());
-                total += b.Price;
+                total += b.TotalPrice;
             }
 
             Console.WriteLine("\nTotal sales price: {0:##.00}", total);
