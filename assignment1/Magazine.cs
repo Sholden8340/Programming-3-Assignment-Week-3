@@ -12,17 +12,15 @@ namespace assignment1
 
         public string ReleaseDay { get; set; }
 
-        public Magazine(string title, double price, string releaseDay, int count)
+        public Magazine(string title, double price, string releaseDay, int count) : base(title, price)
         {
-            this.Title = title;
-            this.Price = price;
             this.ReleaseDay = releaseDay;
             this.Count = count;
         }
 
         public override string ToString()
         {
-            return $"{this.Title} - release day:{this.ReleaseDay}, {this.Price:##.00} ({this.Count}x)";
+            return $"[Magazine] {this.Title} - release day:{this.ReleaseDay}, {this.Price:##.00} ({this.Count}x)";
         }
     }
 }

@@ -83,20 +83,7 @@ namespace assignment2
             }
         }
 
-        public bool Discount
-        {
-            get
-            {
-                if (StartTime.DayOfWeek == DayOfWeek.Tuesday || StartTime.DayOfWeek == DayOfWeek.Monday)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
+        public bool Discount => StartTime.DayOfWeek == DayOfWeek.Tuesday || StartTime.DayOfWeek == DayOfWeek.Monday;
 
         public Ticket(string movieName, decimal price)
         {

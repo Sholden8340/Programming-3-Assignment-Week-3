@@ -13,6 +13,12 @@ namespace assignment1
         public double Price { get; set; }
         public int Count { get; set; }
 
+        public BookStoreItem(string title, double price)
+        {
+            this.Title = title;
+            this.Price = price;
+        }
+
         public double TotalPrice => Count * Price;
 
         public abstract override string ToString();
